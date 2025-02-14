@@ -1,22 +1,42 @@
 #include <stdio.h>
 
-// Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
-// Siga os comentários para implementar cada parte do desafio.
-//Teste larissa
-
-int main() {
-    // Sugestão: Defina variáveis separadas para cada atributo da cidade.
-    // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
+int main(){ 
     
-    // Cadastro das Cartas:
-    // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
-    // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
+    //declaração
+    char codigo[4];
+    int populacao, pontosturisticos; 
+    float area , pib; 
     
-    // Exibição dos Dados das Cartas:
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
+    /* Apresentação do sistema e entrada de dados pelo usuário. */ 
+    printf("Bem vindo ao Super Trunfo: Paises\n");
+    printf("___________________________________\n");
 
-    return 0;
+    printf("Digite o Código de Sua Cidade (ex: A01, B02...): "); 
+    scanf("%s", codigo);
+
+    printf("Digite a População de Sua Cidade: ");
+    scanf("%d", &populacao);
+
+    printf("Digite a Área de Sua Cidade: ");
+    scanf("%f", &area);
+    
+    printf("Digite o PIB de Sua Cidade: ");
+    scanf("%f", &pib);
+    
+    printf("Digite o Número de Pontos Turísticos de Sua Cidade: ");
+    scanf("%d", &pontosturisticos); 
+    
+    //apresentação de dados anteriormente inseridos pelo usuário.
+    
+    printf("\n--- Dados da Cidade ---\n");
+    printf("Código: %s\n", codigo);
+    printf("População: %d Habitantes\n", populacao);
+    printf("Área: %.2f Km²\n", area);
+    printf("PIB: %.2f Bilhoes de Dólares\n", pib);
+    printf("Pontos Turísticos: %d\n", pontosturisticos);
+    
+    //encerra o programa.
+
+    return 0; 
+
 }
