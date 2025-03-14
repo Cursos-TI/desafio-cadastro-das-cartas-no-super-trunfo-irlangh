@@ -4,7 +4,8 @@ int main(){
     
     //declaração das variaveis.
     char estado1, estado2, codigo1[5], codigo2[5], cidade1[50], cidade2[50];
-    int populacao1, populacao2, pontosturisticos1,pontosturisticos2; 
+    unsigned long int populacao1, populacao2;
+    int pontosturisticos1,pontosturisticos2; 
     float area1, area2, pib1, pib2; 
 
     //declaração das variaveis para os calculos.
@@ -30,7 +31,7 @@ int main(){
     fgets(cidade1,sizeof(cidade1), stdin);
 
     printf("Digite a População de Sua Cidade.\n");
-    scanf(" %d", &populacao1);
+    scanf(" %lu", &populacao1);
  
     printf("Digite a Área de Sua Cidade.\n");
     scanf(" %f", &area1);
@@ -56,7 +57,7 @@ int main(){
     fgets(cidade2,sizeof(cidade2), stdin);
 
     printf("Digite a População de Sua Cidade.\n");
-    scanf(" %d", &populacao2);
+    scanf(" %lu", &populacao2);
  
     printf("Digite a Área de Sua Cidade.\n");
     scanf(" %f", &area2);
@@ -94,7 +95,7 @@ int main(){
     printf("Estado: %c\n", estado1);
     printf("Código: %s\n", codigo1);
     printf("Nome de Cidade: %s\n", cidade1);
-    printf("População: %d Habitantes\n", populacao1);
+    printf("População: %lu Habitantes\n", populacao1);
     printf("Área: %.2f Km²\n", area1);
     printf("PIB: %.2f Bilhões de reais\n", pib1);
     printf("Numero de pontos Turísticos: %d\n", pontosturisticos1);
@@ -109,7 +110,7 @@ int main(){
     printf("Estado: %c\n", estado2);
     printf("Código: %s\n", codigo2);
     printf("Nome de Cidade: %s\n", cidade2);
-    printf("População: %d Habitantes\n", populacao2);
+    printf("População: %lu Habitantes\n", populacao2);
     printf("Área: %.2f Km²\n", area2);
     printf("PIB: %.2f Bilhões de reais\n", pib2);
     printf("Numero de pontos Turísticos: %d\n", pontosturisticos2);
